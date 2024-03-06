@@ -19,9 +19,13 @@ const TaskForm = () => {
     });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <header className="app_header">
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="task"
